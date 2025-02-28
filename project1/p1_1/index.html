@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project X</title>
+    <script>
+      "use strict";
+    </script>
+  </head>
+
+  <body>
+    <p><a href="..\home.html">Home</a></p>
+    <a href="..\home.html"><img src="..\images\sftwear.png" alt="" /></a>
+
+    <h1>This page will specify your age to get it printed on the T-shirt.</h1>
+    <script>
+      var Birthday = prompt("Please enter your birthday", "mm/dd/yyyy");
+      Birthday = new Date(Birthday);
+      var currentDate = new Date();
+      var Age = currentDate.getFullYear() - Birthday.getFullYear();
+      document.write("Your Age is " + Age);
+    </script>
+
+    <hr />
+  </body>
+</html>
